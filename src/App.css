@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: rgb(247, 248, 255);
+  margin: 0;
+}
+
+.App {
+  margin: 0;
+}
+
+.App-header {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.header--title {
+  color: rgb(1, 1, 37);
+  margin: 0;
+  margin-right: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.App-header > p {
+  margin: 0;
+  background: rgba(0,0,0,0.2);
+  padding: 1rem;
+  position: absolute;
+  top: 5rem;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+
+form {
+  display: flex;
+}
+
+.color--input {
+  font: inherit;
+  border-color: #f15025;
+  font-size: 1.5rem;
+  padding: 5px;
+  text-indent: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.color--input:focus {
+  outline: none;
+  border-radius: 10px;
+}
+
+.btn {
+  font: inherit;
+  color: white;
+  font-weight: 700;
+  background-color: #f15025;
+  border: none;
+  width: 5rem;
+}
+
+.error {
+  color: red;
+  display: inline;
+  margin-left: 2rem;
+}
+
+.color--palatte--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.color--palatte {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 300;
+  align-items: center;
+}
+
+.color--palatte h4 {
+  font-weight: 300;
+}
+
+.copy {
+  color: gray;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .App-header {
+    flex-direction: column;
+  }
+  .header--title {
+    margin-bottom: 1rem;
+  }
+  .color--palatte--container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .copy {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .copy {
+    font-size: 0.5rem;
+  }
+}
